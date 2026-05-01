@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden Now Landscaping Orlando | Professional Landscaping Services</title>
+  <meta name="description" content="Professional landscaping services in Orlando, FL. Sod installation, landscape design, lawn maintenance, and more. Call (407) 914-1712 for a free quote.">
+  <meta name="keywords" content="landscaping Orlando, sod installation Orlando, lawn maintenance Orlando, landscape design Orlando, paisagismo Orlando">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+          <!-- Two overlapping leaves matching the Garden Now brand -->
+          <path d="M28 6 C16 10 9 22 12 40 C18 36 26 30 28 24 Z" fill="currentColor"/>
+          <path d="M28 6 C40 10 47 22 44 40 C38 36 30 30 28 24 Z" fill="currentColor" opacity="0.55"/>
+          <path d="M28 24 C27 33 25 42 24 51" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Garden Now</span>
+          <span class="logo-sub">Landscaping Orlando</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home"     class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+          <li><a href="#gallery"  class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+          <li><a href="#reviews"  class="nav-link" data-i18n="nav_reviews">Reviews</a></li>
+          <li><a href="#about"    class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="#contact"  class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="lang-toggle">
+            <button class="lang-btn active" id="langEN" onclick="setLanguage('en')">EN</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" id="langES" onclick="setLanguage('es')">ES</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" id="langPT" onclick="setLanguage('pt')">PT</button>
+          </div>
+          <a href="tel:+14079141712" class="btn btn-primary nav-cta" data-i18n="nav_cta">Free Quote</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace .hero background-image in style.css with a real landscape photo -->
+    <div class="container hero-content">
+      <span class="hero-badge reveal" data-i18n="hero_badge">Orlando's Trusted Landscaping Experts</span>
+      <h1 class="hero-title reveal" data-i18n="hero_title">Transforming Outdoor Spaces Into Beautiful Places</h1>
+      <p class="hero-subtitle reveal" data-i18n="hero_subtitle">Creating, executing, and maintaining every outdoor part of your home or business. Professional landscaping you can trust.</p>
+      <div class="hero-actions reveal">
+        <a href="tel:+14079141712" class="btn btn-primary btn-lg">
+          <i class="fas fa-phone"></i>
+          <span data-i18n="hero_cta_call">Call Now</span>
+        </a>
+        <a href="https://wa.me/14079141712" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i>
+          <span data-i18n="hero_cta_whatsapp">WhatsApp</span>
+        </a>
+        <a href="#services" class="btn btn-outline btn-lg" data-i18n="hero_cta_services">Our Services</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-value">5.0 <i class="fas fa-star" style="font-size:1.2rem;color:#f59e0b;"></i></span>
+          <span class="stat-label" data-i18n="stat_google">Google Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">32+</span>
+          <span class="stat-label" data-i18n="stat_reviews">5-Star Reviews</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value"><i class="fas fa-heart" style="color:#f472b6;"></i></span>
+          <span class="stat-label" data-i18n="stat_owned">Women-Owned</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value"><i class="fas fa-map-marker-alt" style="color:#86efac;"></i></span>
+          <span class="stat-label" data-i18n="stat_location">Orlando, FL</span>
+        </div>
+      </div>
+    </div>
+    <a href="#services" class="hero-scroll" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section id="services" class="section section-pale">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="services_badge">What We Do</span>
+        <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+        <p class="section-subtitle" data-i18n="services_subtitle">From design to maintenance, we handle every outdoor need for homes and businesses across Orlando.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-seedling"></i></div>
+          <h3 data-i18n="service1_title">Sod Installation</h3>
+          <p data-i18n="service1_desc">Expert sod laying for a lush, green lawn. We select the best grass varieties suited for Florida's climate.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h3 data-i18n="service2_title">Landscape Design</h3>
+          <p data-i18n="service2_desc">Custom outdoor designs that transform your space into the garden of your dreams, tailored to your vision.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-cut"></i></div>
+          <h3 data-i18n="service3_title">Lawn Mowing</h3>
+          <p data-i18n="service3_desc">Regular, precise grass cutting to keep your lawn even, healthy, and looking great all year long.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-leaf"></i></div>
+          <h3 data-i18n="service4_title">Shrub Trimming</h3>
+          <p data-i18n="service4_desc">Professional pruning and shaping of shrubs and hedges to keep your property neat and well-maintained.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-broom"></i></div>
+          <h3 data-i18n="service5_title">Garden &amp; Yard Cleanup</h3>
+          <p data-i18n="service5_desc">Complete garden and yard cleanups — debris removal, edging, and restoration so your space shines.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-border-all"></i></div>
+          <h3 data-i18n="service6_title">Pavers &amp; Hardscaping</h3>
+          <p data-i18n="service6_desc">Paver installation, walkways, patios, and decorative stone and mulch to complete any outdoor space.</p>
+        </div>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact" class="btn btn-primary btn-lg" data-i18n="services_cta">Get a Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY CHOOSE US
+  ============================================================ -->
+  <section id="why-us" class="section section-dark">
+    <div class="container">
+      <div class="why-grid">
+
+        <div class="why-content">
+          <span class="section-badge badge-gold" data-i18n="why_badge">Why Choose Us</span>
+          <h2 class="section-title text-white" data-i18n="why_title">We Sell Value, Not Just Price</h2>
+          <p class="text-muted" data-i18n="why_subtitle">We do things differently. Our commitment to excellence sets us apart from the majority.</p>
+
+          <ul class="why-list">
+            <li class="reveal">
+              <div class="why-icon"><i class="fas fa-eye"></i></div>
+              <div class="why-item-text">
+                <strong data-i18n="why1_title">Long-Term Vision</strong>
+                <p data-i18n="why1_desc">We plan for lasting results, not quick fixes. Every project is built to endure.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="why-icon"><i class="fas fa-medal"></i></div>
+              <div class="why-item-text">
+                <strong data-i18n="why2_title">Above-Average Execution</strong>
+                <p data-i18n="why2_desc">Our work quality exceeds industry standards — every time, without exception.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="why-icon"><i class="fas fa-search"></i></div>
+              <div class="why-item-text">
+                <strong data-i18n="why3_title">Extreme Attention to Detail</strong>
+                <p data-i18n="why3_desc">We notice and address every detail, so your outdoor space is truly perfect.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="why-icon"><i class="fas fa-clock"></i></div>
+              <div class="why-item-text">
+                <strong data-i18n="why4_title">Uncommon Discipline</strong>
+                <p data-i18n="why4_desc">We show up on time, complete projects as promised, and communicate throughout.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="why-icon"><i class="fas fa-user-check"></i></div>
+              <div class="why-item-text">
+                <strong data-i18n="why5_title">Owner-Involved Service</strong>
+                <p data-i18n="why5_desc">Joilson personally oversees every project to ensure your complete satisfaction.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="why-visual reveal">
+          <div class="why-image-wrapper">
+            <img src="images/project-feature.jpg" alt="Garden Now Landscaping Project">
+          </div>
+          <div class="rating-card">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <div class="rating-score">5.0</div>
+            <div class="rating-label" data-i18n="rating_sub">Google Reviews</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY
+  ============================================================ -->
+  <section id="gallery" class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="gallery_badge">Our Work</span>
+        <h2 class="section-title" data-i18n="gallery_title">Project Gallery</h2>
+        <p class="section-subtitle" data-i18n="gallery_subtitle">See the transformations we've created for homes and businesses across Orlando.</p>
+      </div>
+
+      <!-- Gallery: items with .ba-slider use drag before/after; others use single <img> -->
+      <div class="gallery-grid">
+
+        <!-- Before/After: Backyard Transformation -->
+        <div class="gallery-item gallery-item--large gallery-item--ba reveal">
+          <div class="ba-slider">
+            <div class="ba-after">
+              <img src="images/gallery-backyard-after.jpg" alt="Backyard - Finished">
+            </div>
+            <div class="ba-before">
+              <img src="images/gallery-backyard-before.jpg" alt="Backyard - In Progress">
+            </div>
+            <div class="ba-handle">
+              <div class="ba-btn">
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="ba-labels">
+              <span class="ba-label" data-i18n="ba_before">In Progress</span>
+              <span class="ba-label" data-i18n="ba_after">Finished</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single photo: Sod Installation -->
+        <div class="gallery-item reveal">
+          <img src="images/gallery-sod.jpg" alt="Sod Installation" class="gallery-img">
+        </div>
+
+        <!-- Single photo: Landscape Design -->
+        <div class="gallery-item reveal">
+          <img src="images/gallery-design.jpg" alt="Landscape Design" class="gallery-img">
+        </div>
+
+        <!-- Before/After: Paver Installation -->
+        <div class="gallery-item gallery-item--ba reveal">
+          <div class="ba-slider">
+            <div class="ba-after">
+              <img src="images/gallery-pavers-after.jpg" alt="Paver Installation - Finished">
+            </div>
+            <div class="ba-before">
+              <img src="images/gallery-pavers-before.jpg" alt="Paver Installation - In Progress">
+            </div>
+            <div class="ba-handle">
+              <div class="ba-btn">
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="ba-labels">
+              <span class="ba-label" data-i18n="ba_before">In Progress</span>
+              <span class="ba-label" data-i18n="ba_after">Finished</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single photo: Commercial Landscaping -->
+        <div class="gallery-item reveal">
+          <img src="images/gallery-comercial.jpg" alt="Commercial Landscaping" class="gallery-img">
+        </div>
+
+        <!-- Single photo: Lawn Mowing -->
+        <div class="gallery-item reveal">
+          <img src="images/gallery-mowing.jpg" alt="Lawn Mowing" class="gallery-img">
+        </div>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="https://www.instagram.com/gardennow_/" target="_blank" rel="noopener" class="btn btn-outline-dark btn-lg">
+          <i class="fab fa-instagram"></i>
+          <span data-i18n="gallery_instagram">See More on Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       REVIEWS
+  ============================================================ -->
+  <section id="reviews" class="section section-green">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-light" data-i18n="reviews_badge">What Clients Say</span>
+        <h2 class="section-title text-white" data-i18n="reviews_title">Client Reviews</h2>
+        <div class="reviews-overall">
+          <div class="reviews-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <span class="reviews-score">5.0</span>
+          <span class="reviews-count" data-i18n="reviews_count">Based on 32 Google Reviews</span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">JV</div>
+            <div class="reviewer-info">
+              <strong>Jeane Valdes</strong>
+              <span class="reviewer-meta">Local Guide · 15 reviews</span>
+            </div>
+            <i class="fab fa-google review-google-icon"></i>
+          </div>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="review1_text">"I recently had my landscaping done, and I couldn't be happier with the results. The team was absolutely wonderful from start to finish. They transformed my backyard into a beautiful little haven — it feels like a completely new space! The work was done with great attention to detail, professionalism, and care."</p>
+          <span class="review-tag" data-i18n="review1_tag">Backyard Transformation</span>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">AS</div>
+            <div class="reviewer-info">
+              <strong>Alex Sandro</strong>
+              <span class="reviewer-meta">7 reviews · 2 photos</span>
+            </div>
+            <i class="fab fa-google review-google-icon"></i>
+          </div>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="review2_text">"Garden Now Landscaping did an excellent job replacing my entire lawn. One of the biggest advantages is that the owner, Joilson, personally takes care of any issues that naturally come up. I didn't have to worry about anything, and my garden looks perfect. Highly recommend!"</p>
+          <span class="review-tag" data-i18n="review2_tag">Sod Installation</span>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">GG</div>
+            <div class="reviewer-info">
+              <strong>Gabriel Grando</strong>
+              <span class="reviewer-meta">2 reviews</span>
+            </div>
+            <i class="fab fa-google review-google-icon"></i>
+          </div>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="review3_text">"I had an excellent experience with this landscaping company. Their team was professional, punctual, and extremely detail-oriented. They transformed my outdoor space exactly the way I imagined and even went above and beyond with suggestions to improve the final result."</p>
+          <span class="review-tag" data-i18n="review3_tag">Landscape Design</span>
+        </div>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="https://maps.app.goo.gl/yEYW0qJheOTHKJet4" target="_blank" rel="noopener" class="btn btn-light btn-lg">
+          <i class="fab fa-google"></i>
+          <span data-i18n="reviews_cta">Read All Reviews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" class="section section-white">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-image reveal">
+          <!-- Replace with a real owner/team photo -->
+          <div class="about-photo-placeholder">
+            <i class="fas fa-user-circle"></i>
+            <p data-i18n="about_photo">Owner / Team Photo Here</p>
+          </div>
+          <div class="about-badge-card">
+            <i class="fas fa-award"></i>
+            <div>
+              <strong data-i18n="about_badge_title">Women-Owned Business</strong>
+              <span data-i18n="about_badge_sub">Proudly serving Orlando</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-badge" data-i18n="about_badge_label">About Us</span>
+          <h2 class="section-title" data-i18n="about_title">More Than a Landscaping Company</h2>
+          <p data-i18n="about_p1">Garden Now Landscaping Orlando was founded on a simple belief: every outdoor space has the potential to be extraordinary. We are passionate about creating environments where families gather, businesses impress, and nature thrives.</p>
+          <p data-i18n="about_p2">Owner Joilson personally leads every project, bringing hands-on expertise and genuine care to each client relationship. From the first consultation to the final walkthrough, you'll always know who is responsible for your project.</p>
+          <p data-i18n="about_p3">Based in Orlando and serving the surrounding area, we are proud to be a women-owned business serving our community with integrity, quality, and passion.</p>
+
+          <div class="about-values">
+            <div class="value-item">
+              <i class="fas fa-handshake"></i>
+              <span data-i18n="value1">Honest Pricing</span>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-check-circle"></i>
+              <span data-i18n="value2">Quality Work</span>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-clock"></i>
+              <span data-i18n="value3">On-Time Delivery</span>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-comments"></i>
+              <span data-i18n="value4">Always Reachable</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary btn-lg" data-i18n="about_cta">Work With Us</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-gold" data-i18n="contact_badge">Get In Touch</span>
+        <h2 class="section-title text-white" data-i18n="contact_title">Request a Free Quote</h2>
+        <p class="text-muted" data-i18n="contact_subtitle">Ready to transform your outdoor space? Contact us today for a free consultation.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Netlify Forms: Netlify auto-detects data-netlify="true" at build time. -->
+        <!-- In Netlify dashboard: Site Settings > Forms to configure email notifications. -->
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form" id="contactForm" name="contact" method="POST"
+                data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="bot-field" style="display:none">
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="form_name">Your Name</label>
+                <input type="text" name="name" required data-i18n-placeholder="form_name_ph" placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                <label data-i18n="form_phone">Phone Number</label>
+                <input type="tel" name="phone" required data-i18n-placeholder="form_phone_ph" placeholder="(407) 555-0100">
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="form_email">Email Address</label>
+              <input type="email" name="email" data-i18n-placeholder="form_email_ph" placeholder="you@email.com">
+            </div>
+            <div class="form-group">
+              <label data-i18n="form_service">Service Needed</label>
+              <select name="service">
+                <option value="" data-i18n="form_service_default">Select a service...</option>
+                <option value="sod"         data-i18n="service1_title">Sod Installation</option>
+                <option value="design"      data-i18n="service2_title">Landscape Design</option>
+                <option value="mowing"      data-i18n="service3_title">Lawn Mowing</option>
+                <option value="shrubs"      data-i18n="service4_title">Shrub Trimming</option>
+                <option value="cleanup"     data-i18n="service5_title">Garden &amp; Yard Cleanup</option>
+                <option value="mulch"       data-i18n="service6_title">Mulch &amp; Stone</option>
+                <option value="other"       data-i18n="form_service_other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="form_message">Message</label>
+              <textarea name="message" rows="4" data-i18n-placeholder="form_message_ph" placeholder="Describe your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full btn-lg" data-i18n="form_submit">Send Message</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <p data-i18n="form_success">Thank you! We'll be in touch within 24 hours.</p>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="info-card">
+            <div class="info-item info-item--phone">
+              <div class="info-icon"><i class="fas fa-phone"></i></div>
+              <div class="phone-block">
+                <strong data-i18n="info_phone_label">Phone / WhatsApp</strong>
+                <div class="dual-phones">
+                  <div class="phone-entry">
+                    <span class="phone-lang-tag">Português</span>
+                    <a href="tel:+14079141712">Joilson<br>(407) 914-1712</a>
+                  </div>
+                  <div class="phone-entry">
+                    <span class="phone-lang-tag">English</span>
+                    <a href="tel:+14074376932">Luciana<br>(407) 437-6932</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong data-i18n="info_email_label">Email</strong>
+                <a href="mailto:Gardennowlandscape@gmail.com">Gardennowlandscape@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong data-i18n="info_address_label">Address</strong>
+                <span>2313 Lake Debra Dr,<br>Orlando, FL 32835</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong data-i18n="info_hours_label">Business Hours</strong>
+                <span data-i18n="info_hours">Mon–Fri: 8:00 AM – 6:00 PM<br>Sat: 9:00 AM – 4:00 PM</span>
+              </div>
+            </div>
+            <div class="info-item info-item--social">
+              <div class="info-icon"><i class="fab fa-instagram"></i></div>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/gardennow_/" target="_blank" rel="noopener">@gardennow_</a>
+              </div>
+              <div class="info-icon" style="margin-left:.5rem;"><i class="fab fa-facebook"></i></div>
+              <div>
+                <strong>Facebook</strong>
+                <a href="https://www.facebook.com/luejoilsongardennow" target="_blank" rel="noopener">Garden Now</a>
+              </div>
+            </div>
+            <div class="info-actions">
+              <a href="https://wa.me/14079141712" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+              <a href="tel:+14074376932" class="btn btn-primary">
+                <i class="fas fa-phone"></i>
+                <span data-i18n="info_call">Call Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.856103267339!2d-81.47936472470377!3d28.51397677572958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6892d708e0fcf9f7%3A0x7c5fc2ff87baeb26!2sGarden%20Now%20Landscaping%20Orlando%20-%20Paisagismo%20e%20Jardinagem!5e0!3m2!1sen!2sus!4v1777654353672!5m2!1sen!2sus"
+              width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Garden Now Landscaping Orlando"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#home" class="logo logo-light">
+            <svg class="logo-icon" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28 6 C16 10 9 22 12 40 C18 36 26 30 28 24 Z" fill="currentColor"/>
+              <path d="M28 6 C40 10 47 22 44 40 C38 36 30 30 28 24 Z" fill="currentColor" opacity="0.55"/>
+              <path d="M28 24 C27 33 25 42 24 51" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-name">Garden Now</span>
+              <span class="logo-sub">Landscaping Orlando</span>
+            </div>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">Creating, executing, and maintaining every outdoor part of your home or business.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/gardennow_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/luejoilsongardennow" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/14079141712" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+14079141712" aria-label="Phone"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4 data-i18n="footer_services_title">Services</h4>
+          <ul>
+            <li><a href="#services" data-i18n="service1_title">Sod Installation</a></li>
+            <li><a href="#services" data-i18n="service2_title">Landscape Design</a></li>
+            <li><a href="#services" data-i18n="service3_title">Lawn Maintenance</a></li>
+            <li><a href="#services" data-i18n="service4_title">Shrub Trimming</a></li>
+            <li><a href="#services" data-i18n="service5_title">Garden &amp; Yard Cleanup</a></li>
+            <li><a href="#services" data-i18n="service6_title">Pavers &amp; Hardscaping</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 data-i18n="footer_contact_title">Contact</h4>
+          <p><i class="fas fa-phone"></i> <a href="tel:+14079141712">Joilson — (407) 914-1712</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+14074376932">Luciana — (407) 437-6932</a></p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/14079141712">WhatsApp</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:Gardennowlandscape@gmail.com">Gardennowlandscape@gmail.com</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> 2313 Lake Debra Dr,<br>&nbsp;&nbsp;&nbsp;Orlando, FL 32835</p>
+          <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/gardennow_/" target="_blank" rel="noopener">@gardennow_</a></p>
+          <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/luejoilsongardennow" target="_blank" rel="noopener">facebook.com/luejoilsongardennow</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Garden Now Landscaping Orlando. <span data-i18n="footer_copy">All rights reserved.</span></p>
+        <p class="footer-women"><i class="fas fa-heart"></i> <span data-i18n="footer_women">Women-Owned Business</span></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/14079141712" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
